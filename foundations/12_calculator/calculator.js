@@ -19,11 +19,11 @@ const power = function (a, b) {
 };
 
 const factorial = function (a) {
-  let arr = [];
-  for (let i = 1; i <= a; i++) {
-    arr.push(i);
+  let result = 1;
+  for (let i = a; i > 0; i--) {
+    result *= i;
   }
-  return multiply(arr);
+  return result;
 };
 
 // Do not edit below this line
